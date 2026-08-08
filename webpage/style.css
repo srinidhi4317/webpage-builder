@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(254, 250, 250);
+    color: #111;
+}
+
+.navbar {
+    height: 45px;
+    border-bottom: 1px solid #e5e5e5;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.9%;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nvidia-logo {
+    width: 100px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a,
+.nav-right a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.search {
+    font-size: 22px;
+}
+
+.hero {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.hero h3 {
+    font-size: 23px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 1050px;
+    margin: auto;
+
+    font-size: 20px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.button {
+    display: inline-block;
+
+    margin-top: 27px;
+    padding: 15px 18px;
+
+    background: #76b900;
+    color: black;
+
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.button:hover {
+    background: #8bd000;
+}
+
+.logos {
+    max-width: 1200px;
+    margin: 30px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(9, 1fr);
+
+    align-items: center;
+    justify-items: center;
+
+    column-gap: 30px;
+    row-gap: 32px;
+
+    padding: 0 20px 25px;
+}
+
+.logo {
+    width: 105px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 32px;
+    object-fit: contain;
+}
+
+.cadence {
+    letter-spacing: 4px;
+}
+
+.capital {
+    color: #1769aa;
+}
+
+.cloudera {
+    color: #c46b38;
+}
+
+.cloudflare {
+    color: #777;
+}
+
+.crowdstrike {
+    color: #c61d2d;
+}
+
+.dell {
+    color: #1684c4;
+    font-size: 12px;
+}
+
+.doordash {
+    color: #e53935;
+}
+
+.g2 {
+    font-size: 25px;
+}
+
+.hpe {
+    font-size: 24px;
+}
+
+.naver {
+    color: #22a35a;
+}
+
+.redhat {
+    color: #cc0000;
+}
+
+.salesforce {
+    color: #168ad4;
+}
+
+.sk {
+    color: #e32636;
+}
+
+.spacex {
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.thinking {
+    color: #888;
+    font-size: 11px;
+    line-height: 1.1;
+}
+
+@media (max-width: 1000px) {
+
+    .hero {
+        padding: 55px 25px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .logos {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .logos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px 10px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+}
